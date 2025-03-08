@@ -40,16 +40,37 @@ body {
   text-decoration: none;
   color: #2c3e50;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-list li a:hover {
   color: #A67C52;  /* Earthy brown, reminiscent of natural pigments */
+  transform: scale(1.05);
+}
+
+/* Hero Section for Home Page */
+.hero {
+  background-image: url('/assets/sakura-texture.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: rgba(150, 140, 130, 1); /* Increased opacity for a stronger muted effect */
+  background-blend-mode: multiply;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* Project Gallery Layout using CSS Grid */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 /* Header styles */
 h1, h2, h3 {
-  color: #2c3e50;
+  color: #AcAeB0;
 }
 
 /* Footer styles */

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AnimatedPage from '../components/AnimatedPage';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
