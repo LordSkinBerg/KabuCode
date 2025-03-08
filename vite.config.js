@@ -11,7 +11,9 @@ export default defineConfig({
       clientPort: 443,
       protocol: 'wss'
     },
-    // Add allowedHosts to enable HMR connection from Replit domain
-    allowedHosts: 'all'
+    // Explicitly add your Replit domain to allowedHosts
+    allowedHosts: [
+      'fac411c3-0349-485e-a025-a9ff48f2106a-00-2nef313eyubgk.kirk.replit.dev'
+    ]
   }
 });
